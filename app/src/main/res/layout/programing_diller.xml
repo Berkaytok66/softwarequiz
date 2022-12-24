@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linearLayout1"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="2dp"
+    android:paddingRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkerGrey">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recyclerview_item_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewAvatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/java"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.196"
+                app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutChild"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Lütfen Zorluk Derecesini Belirleyin :"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDescription">
+
+                    <RadioButton
+                        android:id="@+id/kolayRadioBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="60dp"
+                        android:text="Kolay"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/textViewDescription"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+                    <RadioButton
+                        android:id="@+id/ortaRadioBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Orta"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toStartOf="@+id/zorRadioBTN"
+                        app:layout_constraintStart_toEndOf="@+id/kolayRadioBTN"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+                    <RadioButton
+                        android:id="@+id/zorRadioBTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Zor"
+                        android:layout_marginLeft="60dp"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewDescription"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+                </RadioGroup>
+
+                <ImageButton
+                    android:id="@+id/startButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:background="#02FBFBFB"
+                    android:src="@drawable/start_quiz"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

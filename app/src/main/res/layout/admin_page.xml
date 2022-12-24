@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/programDiliInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Program Dili"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="Program Dili*"
+                app:helperTextTextColor="#1C0909">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ProgramDiliEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dereceInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Derece"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="Program Dili*"
+                app:helperTextTextColor="#1C0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dereceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/siraInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Sira"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="Sira*"
+                app:helperTextTextColor="#1C0909">
+
+                <EditText
+                    android:id="@+id/siraEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="18dp"
+                    android:background="#11000000"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/soruInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Soru"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="Soru*"
+                app:helperTextTextColor="#1C0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/soruEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableLayout>
+
+
+
+
+
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="A"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="A*"
+                app:helperTextTextColor="#1C0909">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableLayout>
+
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="B"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="B*"
+                app:helperTextTextColor="#1C0909">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/BEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableLayout>
+
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="C"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="C*"
+                app:helperTextTextColor="#1C0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="D"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="D*"
+                app:helperTextTextColor="#1C0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CvpInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Cvp"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:helperText="CVP*"
+                app:helperTextTextColor="#1C0909">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CvpEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#11000000"
+
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/admin_ekle_btn"
+                android:layout_width="match_parent"
+                android:text="Ekle"
+                android:textColor="@color/Orange"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

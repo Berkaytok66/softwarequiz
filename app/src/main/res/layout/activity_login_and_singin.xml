@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activty.LoginAndSingin">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <LinearLayout
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:id="@+id/LoginEndSinginLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/eposaLinearInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="E-POSTA"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperText="Gerekli*"
+            app:helperTextTextColor="#130C0C"
+
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PostaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#11000000"
+                android:maxLength="30" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sifreInputLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:hint="Şifreniz"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperText="Gerekli*"
+            app:helperTextTextColor="#1C0909"
+
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sifreEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#11000000"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/LoginBtn"
+            android:layout_width="100dp"
+            android:layout_marginEnd="-140dp"
+            android:layout_height="50dp"
+            android:text="Giriş"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hesapOlusturBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hesap_olustur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEndSinginLinearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
